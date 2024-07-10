@@ -1,3 +1,22 @@
 {
-  "searchQuery": "SHAFT_Engine"
+
+  "email": "Admin@gmail.com",
+  "password": "Sa@654321",
+  "tripName": "Test",
+  "numberOfNights": "5",
+  "arrivalDate": "2024-08-06",
+  "agencyNameShortCut": "Power",
+  "agencyFullName": "#1 Power Travel",
+  "agentName": "Karen",
+  "passengerContactName": "Mohammad",
+  "passengerEmail": "test14785@gmal.com",
+  "country": "Italy",
+  "city": "FLORENCE",
+  "tripStartDayDate": "2024-08-06",
+  "tripEndDayDate": "2024-08-11",
+  "price": "200",
+  "bankNum": "1000",
+  "checkNum": "1000",
+  "vendorAutoForComplete": "ho",
+  "vendorFullName": "Antico Hotel Vicenza"
 }
