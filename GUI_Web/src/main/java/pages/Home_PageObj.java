@@ -5,12 +5,12 @@ import org.openqa.selenium.By;
 
 public class Home_PageObj {
     private SHAFT.GUI.WebDriver driver;
-    private String url = "https://bvtportal.com/login";
+    private String url = "https://umrah2.rasnconsult.com/";
     private String title = "Trip Proposal - Login";
-    private By userName_textBox = By.id("exampleInputEmail");
-    private By password_textBox = By.id("exampleInputPassword");
-    private By login_btn = By.xpath("//button[@type=\"submit\"]");
-    private By alertArea = By.xpath("//div[@class='alert alert-danger']");
+    private final By userName_textBox = By.id("exampleInputEmail");
+    private final By password_textBox = By.id("exampleInputPassword");
+    private final By login_btn = By.xpath("//button[@type=\"submit\"]");
+    private final By alertArea = By.xpath("//div[@class='alert alert-danger']");
 
     private String payIconPath = "//td[p[contains(text(), 'value')]]/following-sibling::td/a[@class='pay btn']";
     private String downloadIconPath = "//td[p[contains(text(), 'value')]]/ancestor::tr[1]//td[10]//button[@class='btn dropdown-toggle']";

@@ -10,9 +10,9 @@ public class Payment_PageObj {
         this.driver = driver;
     }
 
-    private By bankNum_input = By.xpath("//input[@placeholder='BankNumber']");
-    private By checkNum_input = By.xpath("//input[@placeholder='CheckNumber']");
-    private By save_btn = By.xpath("//button[@type='submit']");
+    private final By bankNum_input = By.xpath("//input[@placeholder='BankNumber']");
+    private final By checkNum_input = By.xpath("//input[@placeholder='CheckNumber']");
+    private final By save_btn = By.xpath("//button[@type='submit']");
 
     public Payment_PageObj enterBankNum(String bankNum) {
         driver.element().type(bankNum_input, bankNum);

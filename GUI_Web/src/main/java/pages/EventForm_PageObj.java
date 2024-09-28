@@ -7,11 +7,11 @@ import org.testng.asserts.SoftAssert;
 
 public class EventForm_PageObj {
     private SHAFT.GUI.WebDriver driver;
-    private By amount = By.id("inputAmount");
-    private By perRoomPerPerson = By.xpath("//input[@name='people' and @value='per_room_night']");
-    private By save_BTN = By.xpath("//button[contains(text(),'Save')]");
-    private By vendorTextBox = By.xpath("//input[@id='vendorName']");
-    String vendorPath="//a[text()='value']";
+    private final By amount = By.id("inputAmount");
+    private final By perRoomPerPerson = By.xpath("//input[@name='people' and @value='per_room_night']");
+    private final By save_BTN = By.xpath("//button[contains(text(),'Save')]");
+    private final By vendorTextBox = By.xpath("//input[@id='vendorName']");
+    String vendorPath = "//a[text()='value']";
 
     public EventForm_PageObj(SHAFT.GUI.WebDriver driver) {
         this.driver = driver;
@@ -40,9 +40,9 @@ public class EventForm_PageObj {
         return this;
     }
 
-    public EventForm_PageObj setVendor(String vendorForAutoComplete,String vendorFullName) {
+    public EventForm_PageObj setVendor(String vendorForAutoComplete, String vendorFullName) {
         driver.element().type(vendorTextBox, vendorForAutoComplete);
-        driver.element().click(By.xpath(vendorPath.replace("value",vendorFullName)));
+        driver.element().click(By.xpath(vendorPath.replace("value", vendorFullName)));
         return this;
     }
 }

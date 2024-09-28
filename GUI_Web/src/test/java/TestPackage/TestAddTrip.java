@@ -83,7 +83,6 @@ public class TestAddTrip {
 
         new EventForm_PageObj(driver).
                 setEventPrice(price).clickSave();
-
     }
 
     @Test(description = "Check Payment", dependsOnMethods = "editForm")
@@ -119,7 +118,6 @@ public class TestAddTrip {
         String vendorFullName = testData.getTestData("vendorFullName");
         new EventForm_PageObj(driver).setVendor(vendorAutoForComplete, vendorFullName).clickSave();
         new Edit_PageObj(driver).navigateToBookingPage();
-
     }
 
     @Test(description = "Check Customer Can Download Receipt", dependsOnMethods = "addVendor")
@@ -127,7 +125,6 @@ public class TestAddTrip {
         new Home_PageObj(driver).
                 downloadReceipt(bookingNumber).verfyUserCanDownloadReceipt();
     }
-
 
     @AfterClass(description = "Teardown Browser instance.")
     public void afterMethod() {

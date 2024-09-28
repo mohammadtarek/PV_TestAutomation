@@ -8,18 +8,18 @@ import java.util.regex.Pattern;
 
 public class Edit_PageObj {
     private SHAFT.GUI.WebDriver driver;
-    private By manual_btn = By.xpath("// button[contains(text(),'Manual')]");
-    private By country_feild = By.xpath("//select[@id='events_country']");
-    private By city_feild = By.xpath("//select[@id='events_city']");
-    private By search_BTN = By.xpath("//button[contains(text(),'Search')]");
-    private By dateFrom_date = By.xpath("//input[@id='date_range_from']");
-    private By dateTo_date = By.xpath("//input[@id='date_range_to']");
+    private final By manual_btn = By.xpath("// button[contains(text(),'Manual')]");
+    private final By country_feild = By.xpath("//select[@id='events_country']");
+    private final By city_feild = By.xpath("//select[@id='events_city']");
+    private final By search_BTN = By.xpath("//button[contains(text(),'Search')]");
+    private final By dateFrom_date = By.xpath("//input[@id='date_range_from']");
+    private final By dateTo_date = By.xpath("//input[@id='date_range_to']");
 
-    private By addEvent = By.id("dropdownDaysButton-1");
-    private By eventDate = By.xpath("//div[@class='dropdown-menu show']//a[@class='dropdown-item'][1]");
-    private By editEvent_btn = By.xpath("//i[@class='fa fa-edit text-primary']");
-    private By tripTitle = By.id("itiernaryName");
-    private By booking_BTN = By.xpath("//span[text()='Bookings']");
+    private final By addEvent = By.id("dropdownDaysButton-1");
+    private final By eventDate = By.xpath("//div[@class='dropdown-menu show']//a[@class='dropdown-item'][1]");
+    private final By editEvent_btn = By.xpath("//i[@class='fa fa-edit text-primary']");
+    private final By tripTitle = By.id("itiernaryName");
+    private final By booking_BTN = By.xpath("//span[text()='Bookings']");
 
     String cityPath = "//select[@id='events_city']//option [text()='value']";
     String countryPath = "//select[@class='form-control']//option[contains(text(),'value')]";

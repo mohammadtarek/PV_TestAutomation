@@ -1,7 +1,6 @@
 {
-
-  "email": "Admin@gmail.com",
-  "password": "Sa@654321",
+  "email": "admin@gmail.com",
+  "password": "Sa@123456",
   "tripName": "Test",
   "numberOfNights": "5",
   "arrivalDate": "2024-08-06",

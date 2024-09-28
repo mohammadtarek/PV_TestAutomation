@@ -5,15 +5,14 @@ import org.openqa.selenium.By;
 
 public class EditHash_PageObj {
     private SHAFT.GUI.WebDriver driver;
-    private By tripName_textBox = By.xpath("//div[@class='col-12 col-md-8']//input[@id='tripName']");
-    private By precentage_title = By.xpath("");
-    private By numOfNights_textBox = By.id("NumOfDays");
-    private By arrivalDate_date = By.id("travelDay");
-    private By agency_textBox = By.xpath("//input[@name='agency_name' and @id ='agencyName']");
-    private By agentName_DDL = By.xpath("//Select[@id='agent_dropdown']");
-    private By passengerContactName_textBox = By.id("first_name");
-    private By passengerEmail = By.id("summernote");
-    private By save_btn = By.xpath("//button[ @class='btn btn-primary d-block mx-auto px-5']");
+    private final By tripName_textBox = By.xpath("//div[@class='col-12 col-md-8']//input[@id='tripName']");
+    private final By numOfNights_textBox = By.id("NumOfDays");
+    private final By arrivalDate_date = By.id("travelDay");
+    private final By agency_textBox = By.xpath("//input[@name='agency_name' and @id ='agencyName']");
+    private final By agentName_DDL = By.xpath("//Select[@id='agent_dropdown']");
+    private final By passengerContactName_textBox = By.id("first_name");
+    private final By passengerEmail = By.id("summernote");
+    private final By save_btn = By.xpath("//button[ @class='btn btn-primary d-block mx-auto px-5']");
     private String agencyFullName_DDL = "//li//a[@class='dropdown-item' and contains(text(),'value')]";
     private String agentName = "//option[text()='value']";
 
