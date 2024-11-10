@@ -49,6 +49,7 @@ public class TestAddTrip {
         passengerContactName = testData.getTestData("passengerContactName");
         passengerEmail = testData.getTestData("passengerEmail");
 
+
         new EditHash_PageObj(driver).
                 setTripName(tripName).
                 setNumOfNights(numberOfNights).
@@ -68,7 +69,7 @@ public class TestAddTrip {
         tripEndDayDate = testData.getTestData("tripEndDayDate");
 
         new Edit_PageObj(driver).
-                chooseManualOption().
+                chooseContractOption().
                 selectCity(city).
                 selectEventDate(tripStartDayDate, tripEndDayDate).
                 selectEvent().

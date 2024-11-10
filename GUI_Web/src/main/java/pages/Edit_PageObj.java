@@ -9,6 +9,8 @@ import java.util.regex.Pattern;
 public class Edit_PageObj {
     private SHAFT.GUI.WebDriver driver;
     private final By manual_btn = By.xpath("// button[contains(text(),'Manual')]");
+    private final By contract_btn = By.xpath("// button[contains(text(),'Contracts')]");
+
     private final By country_feild = By.xpath("//select[@id='events_country']");
     private final By city_feild = By.xpath("//select[@id='events_city']");
     private final By search_BTN = By.xpath("//button[contains(text(),'Search')]");
@@ -16,6 +18,7 @@ public class Edit_PageObj {
     private final By dateTo_date = By.xpath("//input[@id='date_range_to']");
 
     private final By addEvent = By.id("dropdownDaysButton-1");
+    //private final By addEvent = By.id("defaultOpen");
     private final By eventDate = By.xpath("//div[@class='dropdown-menu show']//a[@class='dropdown-item'][1]");
     private final By editEvent_btn = By.xpath("//i[@class='fa fa-edit text-primary']");
     private final By tripTitle = By.id("itiernaryName");
@@ -33,6 +36,10 @@ public class Edit_PageObj {
         driver.element().click(manual_btn);
         return this;
     }
+    public Edit_PageObj chooseContractOption() {
+        driver.element().click(contract_btn);
+        return this;
+    }
 
     public Edit_PageObj selectCountry(String country) {
         driver.element().click(country_feild);
@@ -41,8 +48,10 @@ public class Edit_PageObj {
     }
 
     public Edit_PageObj selectCity(String city) {
-        driver.element().clickUsingJavascript(city_feild);
-        driver.element().clickUsingJavascript(By.xpath(cityPath.replace("value", city)));
+        //driver.element().clickUsingJavascript(city_feild);
+        //driver.element().clickUsingJavascript(By.xpath(cityPath.replace("value", city)));
+        driver.element().click(city_feild);
+        driver.element().click(By.xpath(cityPath.replace("value", city)));
         return this;
     }
 

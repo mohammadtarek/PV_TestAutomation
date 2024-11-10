@@ -11,7 +11,7 @@ public class EditHash_PageObj {
     private final By agency_textBox = By.xpath("//input[@name='agency_name' and @id ='agencyName']");
     private final By agentName_DDL = By.xpath("//Select[@id='agent_dropdown']");
     private final By passengerContactName_textBox = By.id("first_name");
-    private final By passengerEmail = By.id("summernote");
+    private final By passengerEmail = By.id("email");
     private final By save_btn = By.xpath("//button[ @class='btn btn-primary d-block mx-auto px-5']");
     private String agencyFullName_DDL = "//li//a[@class='dropdown-item' and contains(text(),'value')]";
     private String agentName = "//option[text()='value']";
